@@ -4,6 +4,18 @@ Primary Color (Scarlet): #B85042;
 Secondary Color (Light Teal): #A7BEAE;
 Tertiary Color (Light Olive): #E7E8D1;
 */
+
+header {
+  background-color: #ffe4c4;
+  text-align: center;
+
+position: fixed;
+-webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    0px 5px 5px 0px rgba(50, 50, 50, 0.75);
+box-shadow:         0px 5px 5px 0px rgba(50, 50, 50, 0.75);
+width: 100%
+}
+
 body {
   background-color: #A7BEAE;
   font-family: 'Merriweather', serif;
@@ -102,4 +114,60 @@ a:focus {
 .button.contact:hover {
   background-color: #ff7f50;
   color: #ffffff;
+}
+
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+.center {
+  text-align: center;
+}
+.logo {
+  max-width: 250px;
+}
+
+/*header formating */
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+  display: inline-block;
+  width: 100%
+
+
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+nav > ul > li > a:visited {
+  color: #000000;
+}
+nav > ul > li > a:hover {
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+
+nav > ul > li > a:active {
+  color: #ffffff;
+}
+
+#hero {
+  background-color: #ffe4c4;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+main {
+  padding-top: 133px;
 }
