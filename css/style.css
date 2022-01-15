@@ -112,6 +112,7 @@ a:focus {
   opacity: 0.8;
   /* Reduces the opacity of the button to 80% */
   text-decoration: none;
+  color: white;
 }
 
 .button.contact {
@@ -179,6 +180,11 @@ nav>ul>li>a:active {
   color: #ffffff;
 }
 
+ul > li {
+list-style-type: none;
+padding: 0;
+}
+
 #logo{
     font-style: italic;
     font-weight: bold;
@@ -192,10 +198,15 @@ display: block;
 }
 #footer {
   text-align: center;
+    display: inline-block;
+
 }
+
+
 #skills {
   list-style-type: none;
   text-align: center;
+  display: inline-block;
 }
 
 
