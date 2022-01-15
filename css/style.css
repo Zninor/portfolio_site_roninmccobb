@@ -8,7 +8,7 @@ Tertiary Color (Light Olive): #E7E8D1;
   box-sizing: border-box;
 }
 header {
-  background-color: #A7BEAE;
+  background-color: #234E70;
   text-align: center;
   position: fixed;
   -webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.75);
@@ -18,7 +18,7 @@ header {
 }
 #hero {
   text-align: center;
-  background-color: #B85042;
+  background-color: #234E70;
   color: #E7E8D1;
   padding: 20px 0;
   display: inline-block;
@@ -29,7 +29,7 @@ header {
 
 
 body {
-  background-color:  #A7BEAE;
+  background-color:  #E7E8D1;
   font-family: 'Merriweather', serif;
   font-size: 16px;
   /* Sets the font size to 16px */
@@ -37,7 +37,7 @@ body {
   /* Sets the font weight to 300 */
   line-height: 1.6;
   /* Sets the line-height to 1.6 * the font-size */
-  color: #B85042;
+  color: #234E70;
 }
 
 h1, h2, h3, h4 {
@@ -71,15 +71,11 @@ img {
 }
 
 a {
-  color: #0645AD;
+color: #234E70;
   text-decoration: none;
-  /* No underlining */
-}
-
-a:hover {
-  color: #ffffff;
-  text-decoration: underline;
-  /* Underlining when hovering over a link */
+  transition-duration: 0.4s;
+  transition-property: color;
+  transition-property: all;
 }
 
 a:visited {
@@ -89,13 +85,14 @@ a:visited {
 
 a:active {
   /* selected link */
-  color: #ffffff;
+  color: #ff7f50;
 }
 
 a:hover,
 a:focus {
-  color: #ffffff;
+  color: #ff7f50;
   text-decoration: underline;
+
 }
 
 .button {
@@ -107,11 +104,8 @@ a:focus {
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #994c30;
-  transition-duration: 0.2s;
+  transition-duration: 0.4s;
   transition-property: opacity;
-}
-.button:hover {
-  opacity: 0.8;
 }
 
 .button:hover {
@@ -125,6 +119,8 @@ a:focus {
   color: #ff7f50;
   text-transform: uppercase;
   border: 2px solid #ff7f50;
+  transition-duration: 0.4s;
+  transition-property: background-color;
 }
 
 .button.contact:hover {
@@ -166,11 +162,11 @@ nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #4a4a4a;
+  color: #E7E8D1;
 }
 
 nav>ul>li>a:visited {
-  color: #000000;
+  color: #E7E8D1;
 }
 
 nav>ul>li>a:hover {
@@ -187,7 +183,7 @@ nav>ul>li>a:active {
     font-style: italic;
     font-weight: bold;
     font-size: 40px;
-    color: #B85042;
+    color: #E7E8D1;
     text-decoration: none;
 }
 
@@ -195,6 +191,10 @@ nav>ul>li>a:active {
 display: block;
 }
 #footer {
+  text-align: center;
+}
+#skills {
+  list-style-type: none;
   text-align: center;
 }
 
