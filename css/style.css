@@ -196,19 +196,48 @@ padding: 0;
 #hero span {
 display: block;
 }
-#footer {
-  text-align: center;
-    display: inline-block;
-
+#footer svg{
+  height: auto;
+  width: 50px;
 }
-
-
-#skills {
-  list-style-type: none;
+#footer {
   text-align: center;
   display: inline-block;
 }
+#footer h2{
+  margin-bottom: 0px;
+}
+#footer p{
+  margin-top: 0px;
+}
 
+
+
+#work h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#skills {
+  text-align: center;
+  display: inline-block;
+}
+#skills p{
+  margin: 0;
+}
+#profile{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#about img{
+  display: block;
+ margin-left: auto;
+ margin-right: auto;
+ width: 40%;
+}
 
 main {
   padding-top: 100px;
@@ -234,7 +263,12 @@ Medium devices (640px and larger)
 body{
     font-size: 18px;
   }
-  #about-page h3 { margin-top: 0;}
+  #about-page h3 {
+     margin-top: 0;
+   text-align: center;
+ }
+
+
 
 }
 /* ==============================
