@@ -180,6 +180,13 @@ nav>ul>li>a:active {
   color: #ffffff;
 }
 
+
+#socials >ul>li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+
 ul > li {
 list-style-type: none;
 padding: 0;
@@ -198,7 +205,11 @@ display: block;
 }
 #footer svg{
   height: auto;
-  width: 50px;
+  width: 35px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 #footer {
   text-align: center;
@@ -232,7 +243,7 @@ display: block;
   width: 50%;
 }
 
-#about img{
+#about img {
   display: block;
  margin-left: auto;
  margin-right: auto;
