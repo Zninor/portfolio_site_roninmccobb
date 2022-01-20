@@ -6,10 +6,10 @@ Tertiary Color (Light Olive): #E7E8D1;
 */
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 header {
   background-color: #234E70;
-  text-align: center;
   position: fixed;
   -webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.75);
   -moz-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.75);
@@ -20,7 +20,7 @@ header {
   text-align: center;
   background-color: #234E70;
   color: #E7E8D1;
-  padding: 20px 0;
+  padding: 10px 0 4px;
   display: inline-block;
   width: 100%;
 
@@ -149,18 +149,15 @@ a:focus {
 
 /*header formating */
 nav>ul {
-  display: inline-block;
   list-style-type: none;
-  padding: 0;
-  width: 100%
+  : 0;
+  margin: 0;
 }
 
-nav>ul>li {
-  display: inline-block;
-}
+
 
 nav>ul>li>a {
-  padding: 0 15px;
+  padding: 10 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #E7E8D1;
@@ -181,14 +178,14 @@ nav>ul>li>a:active {
 }
 
 
-#socials >ul>li {
-  padding: 0px 20px;
-}
-
-
 ul > li {
 list-style-type: none;
 padding: 0;
+}
+
+#socials >ul>li {
+  padding: 0px 10px;
+  
 }
 
 #logo{
@@ -197,6 +194,7 @@ padding: 0;
     font-size: 40px;
     color: #E7E8D1;
     text-decoration: none;
+    max-width: 150px;
 }
 
 #hero span {
@@ -212,6 +210,7 @@ display: block;
 }
 #footer {
   text-align: center;
+
 
 }
 #footer h2{
@@ -250,13 +249,44 @@ display: block;
 }
 
 main {
-  padding-top: 100px;
+  padding-top: 64px;
+}
+
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 12px;
+  font-size: 25px;
+  padding-right: 0px;
+}
+
+.navtoggle.responsive nav {
+  padding: 0px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 5px 0;
+  border-top: 1px
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
 }
 
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+  #logo {
+    max-width: 250px;
+  }
   header {
       text-align: unset;
       padding: 20px 0 13px;
@@ -277,8 +307,21 @@ body{
      margin-top: 0;
    text-align: center;
  }
-
-
+ nav>ul>li {
+   display: inline-block;
+ }
+ .navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+.navtoggle li:last-child {
+  display: none;
+}
+nav > ul {
+  margin: 1em 0;
+}
+nav>ul>li{
+  padding: 0 15px;
+}
 
 }
 /* ==============================
@@ -294,6 +337,9 @@ header {
     width: auto;
     float: right;
     margin-top: 4px;
+  }
+  nav>ul>li{
+    padding: 0 15px;
   }
   .col-lg-7 {
 width: 58.33%;

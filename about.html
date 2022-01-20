@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head>
+  <script src="https://kit.fontawesome.com/798566f654.js" crossorigin="anonymous"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
   <title>Ronin McCobb UX/UI Designer Austin TX</title>
@@ -33,15 +34,18 @@
   <!-- For the header -->
   <header>
     <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
       <a id="logo" href="#">Ronin McCobb</a>
-    <nav>
-      <ul class = "navigation">
-        <li> <a href="index.html">Work</a> </li>
-        <li> <a href="about.html">About</a> </li>
-        <li> <a href="contact.html">Contact</a> </li>
-      </ul>
-    </nav>
+      <nav>
+        <ul class="navigation">
+          <li> <a href="index.html">Work</a> </li>
+          <li> <a href="about.html">About</a> </li>
+          <li> <a href="contact.html" onclick="menuToggle()">Contact</a> </li>
+          <li> <a href= "javascript:void(0);" class="icon" onclick="menuToggle()"><i class = "fas fa-bars"></i></a></li>
+        </ul>
+      </nav>
     </div>
+  </div>
   </header>
 
 
@@ -140,7 +144,10 @@
         <p>Copyright Ronin McCobb 2022</p>
       </div>
   </footer>
-
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
 </body>
 
