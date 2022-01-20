@@ -88,12 +88,7 @@ a:active {
   color: #ff7f50;
 }
 
-a:hover,
-a:focus {
-  color: #ff7f50;
-  text-decoration: underline;
 
-}
 
 .button {
   display: inline-block;
@@ -150,7 +145,6 @@ a:focus {
 /*header formating */
 nav>ul {
   list-style-type: none;
-  : 0;
   margin: 0;
 }
 
@@ -185,7 +179,7 @@ padding: 0;
 
 #socials >ul>li {
   padding: 0px 10px;
-  
+  display: inline-block;
 }
 
 #logo{
@@ -323,6 +317,12 @@ nav>ul>li{
   padding: 0 15px;
 }
 
+[class*="col-"] {
+  float: left;
+  padding: 10px
+}
+
+
 }
 /* ==============================
 Large devices (1024px or larger)
@@ -359,10 +359,7 @@ X-large devices (1440px or larger)
 @media only screen and (min-width: 1440px) {
 }
 
-[class*="col-"] {
-  float: left;
-  padding: 10px
-}
+
 .row::after {
   content: "";
   clear: both;
