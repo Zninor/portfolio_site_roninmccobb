@@ -1,13 +1,12 @@
 /*
-Colors used:
-Primary Color (Scarlet): #B85042;
-Secondary Color (Light Teal): #A7BEAE;
-Tertiary Color (Light Olive): #E7E8D1;
+
 */
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
+
 header {
   background-color: #234E70;
   position: fixed;
@@ -16,6 +15,7 @@ header {
   box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.75);
   width: 100%
 }
+
 #hero {
   text-align: center;
   background-color: #234E70;
@@ -23,13 +23,10 @@ header {
   padding: 10px 0 4px;
   display: inline-block;
   width: 100%;
-
 }
 
-
-
 body {
-  background-color:  #E7E8D1;
+  background-color: #E7E8D1;
   font-family: 'Merriweather', serif;
   font-size: 16px;
   /* Sets the font size to 16px */
@@ -71,7 +68,7 @@ img {
 }
 
 a {
-color: #234E70;
+  color: #234E70;
   text-decoration: none;
   transition-duration: 0.4s;
   transition-property: color;
@@ -87,8 +84,6 @@ a:active {
   /* selected link */
   color: #ff7f50;
 }
-
-
 
 .button {
   display: inline-block;
@@ -148,10 +143,8 @@ nav>ul {
   margin: 0;
 }
 
-
-
 nav>ul>li>a {
-  padding: 10 15px;
+  padding: 10px 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #E7E8D1;
@@ -171,63 +164,63 @@ nav>ul>li>a:active {
   color: #ffffff;
 }
 
-
-ul > li {
-list-style-type: none;
-padding: 0;
+ul>li {
+  list-style-type: none;
+  padding: 0;
 }
 
-#socials >ul>li {
+#socials>ul>li {
   padding: 0px 10px;
   display: inline-block;
 }
 
-#logo{
-    font-style: italic;
-    font-weight: bold;
-    font-size: 40px;
-    color: #E7E8D1;
-    text-decoration: none;
-    max-width: 150px;
+#logo {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 40px;
+  color: #E7E8D1;
+  text-decoration: none;
+  max-width: 150px;
 }
 
 #hero span {
-display: block;
+  display: block;
 }
-#footer svg{
+
+#footer svg {
   height: auto;
   width: 35px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-
 }
+
 #footer {
   text-align: center;
-
-
 }
-#footer h2{
+
+#footer h2 {
   margin-bottom: 0px;
 }
-#footer p{
+
+#footer p {
   margin-top: 0px;
 }
 
-
-
 #work h3 {
-    margin-top: 0px;
-    margin-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 #skills {
   text-align: center;
 }
-#skills p{
+
+#skills p {
   margin: 0;
 }
-#profile{
+
+#profile {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -236,22 +229,23 @@ display: block;
 
 #about img {
   display: block;
- margin-left: auto;
- margin-right: auto;
- width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
 }
 
 main {
   padding-top: 64px;
 }
 
-
 .navtoggle li:not(:last-child) {
   display: none;
 }
+
 .navtoggle, .navtoggle.responsive {
   position: relative;
 }
+
 .navtoggle li .icon {
   position: absolute;
   right: 0;
@@ -263,13 +257,14 @@ main {
 .navtoggle.responsive nav {
   padding: 0px 0 0;
 }
-.navtoggle.responsive li  {
+
+.navtoggle.responsive li {
   display: block;
   padding: 5px 0;
   border-top: 1px
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
@@ -280,55 +275,9 @@ Medium devices (640px and larger)
   #logo {
     max-width: 250px;
   }
+
   header {
-      text-align: unset;
-      padding: 20px 0 13px;
-    }
-
-    nav {
-      width: auto;
-      float: right;
-      margin-top: 4px;
-    }
-    .col-md-6 {
-  width: 50%;
-}
-body{
-    font-size: 18px;
-  }
-  #about-page h3 {
-     margin-top: 0;
-   text-align: center;
- }
- nav>ul>li {
-   display: inline-block;
- }
- .navtoggle li:not(:last-child) {
-  display: inline-block;
-}
-.navtoggle li:last-child {
-  display: none;
-}
-nav > ul {
-  margin: 1em 0;
-}
-nav>ul>li{
-  padding: 0 15px;
-}
-
-[class*="col-"] {
-  float: left;
-  padding: 10px
-}
-
-
-}
-/* ==============================
-Large devices (1024px or larger)
-================================= */
-@media only screen and (min-width: 1024px) {
-header {
-
+    text-align: unset;
     padding: 20px 0 13px;
   }
 
@@ -337,27 +286,83 @@ header {
     float: right;
     margin-top: 4px;
   }
-  nav>ul>li{
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  #about-page h3 {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  nav>ul>li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  nav>ul {
+    margin: 1em 0;
+  }
+
+  nav>ul>li {
     padding: 0 15px;
   }
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px
+  }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  header {
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  nav>ul>li {
+    padding: 0 15px;
+  }
+
   .col-lg-7 {
-width: 58.33%;
+    width: 58.33%;
+  }
+
+  .col-lg-5 {
+    width: 41.66%;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
-.col-lg-5{
-  width: 41.66%;
-}
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-}
+
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {
-}
-
+@media only screen and (min-width: 1440px) {}
 
 .row::after {
   content: "";
@@ -366,24 +371,47 @@ X-large devices (1440px or larger)
 }
 
 @keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
 }
+
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
+
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
+
 .sun {
   animation: 4s color-change infinite alternate linear;
 }
+
 .cloud-front {
   animation: 30s cloud-move infinite alternate linear;
 }
+
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
